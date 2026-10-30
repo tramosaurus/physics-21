@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [1.1 The Nature of Physics](#1-1-The-Nature-of-Physics)
-- [1.2 Solving Physics Problems](#1-2-Solving-Physics-Problems)
+- [1.1 The Nature of Physics](#11-The-Nature-of-Physics)
+- [1.2 Solving Physics Problems](#12-Solving-Physics-Problems)
 
 ## 1.1 The Nature of Physics
 
