@@ -149,5 +149,15 @@ In the lab, we'll ignore gross error, because you are awesome, and you never mak
 - The smallest increment of the ruler shown in the image is 1 millimeter. That means that you might report as measurement as
 
 <p align="center">
-$l = 86.1 \text{mm}$
+$l = 86.2 \text{ mm}$
 </p>
+
+- The last digit, in this case $.2$, is the digit you would have guessed.
+
+- To report error, we take the smallest increment and divide it in half. In our example, that would be $(1 \text{ mm})/2=0.5$. Our measurement would then be reported as:
+
+<p align="center">
+$l \pm \delta l = 86.2 \pm 0.5 \text{ mm}$ 
+</p>
+
+- In this case, $l$ is our measurement, and $\delta l$ is the measurement error or uncertainty.
