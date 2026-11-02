@@ -154,10 +154,82 @@ $l = 86.2 \text{ mm}$
 
 - The last digit, in this case $.2$, is the digit you would have guessed.
 
-- To report error, we take the smallest increment and divide it in half. In our example, that would be $(1 \text{ mm})/2=0.5$. Our measurement would then be reported as:
+- To report error, we take the smallest increment and divide it in half. In our example, that would be $(1 \text{ mm})/2=0.5 \text{ mm}$. Our measurement would then be reported as:
 
 <p align="center">
 $l \pm \delta l = 86.2 \pm 0.5 \text{ mm}$ 
 </p>
 
 - In this case, $l$ is our measurement, and $\delta l$ is the measurement error or uncertainty.
+
+- Be sure you know how to handle significant figures when mathematically manipulating your measurements.
+
+#### Percent Error
+- In contrast, a measurement with a greater number of significant figures typically has a _lower_ percent error.
+
+- Take the rulers below, which have different levels of precision.
+
+![The figure shows three rulers with the same scaling, but different measurement increments. The top ruler shows only decimeter markings. The middle ruler shows only centimeter markings. The bottom ruler shows millimeter markings. Finally, there is a red vertical line that cuts across the three rulers between 5 and 6 centimeters.](/ch-01/ruler-precision.png)
+
+- Following our rule of reporting measurements, the red line marks the following locations on the three rulers:
+    - Top ruler: $l \pm \delta l = 0.5 \pm 0.5 \text{ dm}$
+    - Middle ruler: $l \pm \delta l = 5.8 \pm 0.5 \text{ cm} = 0.58 \pm 0.05 \text{ dm}$
+    - Bottom ruler: $l \pm \delta l = 57.4 \pm 0.5 \text{ mm} = 5.73 \pm 0.05 \text{ cm} = 0.573 \pm 0.005 \text{ dm}$
+- Note that the ruler wtih the smallest increment resulted in the greatest number of significant figures, and thus the smallest percent error.
+
+### When Random Error is the Greatest
+
+#### Repeating Measurements
+- If a measurement is repeatable, you should repeat it! This eliminates human error and reduces noise.
+- Presumably, your measurement will be centered around a trule value (which we assign as the average value). The distribution you get as you obtain more values becomes a "nomral" or a "Gaussian" distribution.
+
+#### Gaussian Distribution
+- If you were to plot your measurements as a histogram, you would start seeing a Gaussian distribution, which is a bell curve.
+- The more measurements you make, the less wide the distribution becomes, and the more sure of your answer you are.
+- We describe this width using the standard deviation ($\sigma$). The range of the values that are one standard deviation above and below the average value represents 67% of the entire population.
+- We can also use the standard deviation to report our measurement error/uncertainy:
+
+<p align="center">
+$\text{Measurement}=x_\text{Avg} \pm \sigma$
+</p>
+
+#### Caculating Standard Deviation
+
+There are two types of standard deviation. When calculating it, be sure you know which one you're using:
+- Sample: Used when you only have a small sample but you're trying to generalize it to a larger population.
+
+<p align="center">
+$\sigma_s=\sqrt{\frac{\sum_{i} (x_i-\bar{x})}{N-1}}$
+</p>
+
+- Population: You have the entire population of samples that you care about, and you're _not_ trying to generalize it to a larger population.
+
+<p align="center">
+$\sigma_p=\sqrt{\frac{\sum_{i} (x_i-\bar{x})}{N}}$
+</p>
+
+- In both cases, $\bar{x}$ is the average, and $N$ is the number of samples.
+
+#### Reporting Measurement Error/Uncertainty When You Have Random Error
+
+- For this class, you want to take at least **five** measurements and you want to use the **population standard deviation**.
+
+- Let's say your measurements were $7.2 \text{ s}$, $8.5\text{ s}$, $7.8\text{ s}$, $8.1 \text{ s}$, and $7.5\text{ s}$. You'll want to start by calculating the average:
+
+<p align="center">
+$t_\text{Avg}= \frac{7.2+8.5+7.8+8.1+7.5}{5}=7.82 \text{ s}$
+</p>
+
+- Then you can use that to calculating the standard deviation.
+
+<p align="center">
+$\sigma_p=\sqrt{\frac{(7.2-7.82)^2+(8.5-7.82)^2+(7.8-7.82)^2+(8.1-7.82)^2+(7.5-7.82)^2}{5}}=0.453 \text{ s}$
+</p>
+
+- Now you can report your value. Typically, you can round your standard deviation to a single digit, and then make sure that your average is rounded to the _same_ digit.
+
+<p align="center">
+$t=7.8 \pm 0.5 \text{ s}$
+</p>
+
+### Dependent Measurement Error.
