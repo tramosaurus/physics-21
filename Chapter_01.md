@@ -78,7 +78,7 @@ You should know your unit prefixes as well. Be sure to remember the ones in bold
 | deci (d) | 0.1 | $10^{-1}$ | one tenth |
 | centi (c) | 0.01 | $10^{-2}$ | one hundredth |
 | milli (m) | 0.001 | $10^{-3}$ | one thousandth |
-| micro (μ) | 0.000001 | $10^{-6} | one millionth |
+| micro (μ) | 0.000001 | $10^{-6}$ | one millionth |
 | nano (n) | 0.000000001 | $10^{-9}$ | one billionth |
 | pico (p) | 0.000000000001 | $10^{-12}$ | one trillionth |
 | femto (f) | 0.000000000000001 | $10^{-15}$ | one quadrillionth |
@@ -129,3 +129,25 @@ Measurement error or uncertaininy is a combination of error that originates from
 In the lab, we'll ignore gross error, because you are awesome, and you never make mistakes. You'll have to consider which of the first two types of errors contribute _most_ to your measurement error; this is the how you will decide on what to report for error/uncertainty.
 
 ### When Systematic Error is the Greatest
+
+#### Accuracy and Precision
+- _Accuracy_ and _precision_ are two qualities that are intrinsic to the measurement tool.
+    - Accuracy: How close are you to the true value? 
+    - Precise: How repeatable are the measurements?
+- Below is am image that hopefully helps you understand the relationship between accuracy and precision.
+
+![The image shows four archery targets, each made up of concentric rings. The top-left target is labelled as "accurate" and "precise." This target has X markings grouped closely together near the center, or the "bullseye." The top right is labelled as "accurate" and "not precise." In this one, the X markings are scattered, but centered around the bullseye. The bottom left target is labelled as "not accurate" and "precise." The X markings are grouped very closely together, however they sit far to the left of the bullseye. Finally, the last target is "not accurate" and "not precise." The X markings are scattered and not centered around the bullseye.](/ch-01/accuracy-and-precision.png)
+
+- For the sake of our class, we assume that all our measurement tools are accurate when used correctly. This means that the error you report will then be related to the _precision_ of the tool. 
+
+#### Precision, Significant Figures, and Reporting Error/Uncertainty
+- The more precise the tool, the smaller increment of measurement (in other words, the more numbers to the right of the decimal point, when applicable). 
+- When we report a measurement, usually the _last_ digit we report is the one that we guess.
+
+![The image is of a standard metric ruler, with the smallest increment of measurement as 1 millimeters. The ruler goes from 0 to 15 centimeters.](/ch-01/ruler.png)
+
+- The smallest increment of the ruler shown in the image is 1 millimeter. That means that you might report as measurement as
+
+<p align="center">
+$l = 86.1 \text{mm}$
+</p>
