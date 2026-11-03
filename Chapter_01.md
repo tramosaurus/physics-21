@@ -199,16 +199,16 @@ There are two types of standard deviation. When calculating it, be sure you know
 - Sample: Used when you only have a small sample but you're trying to generalize it to a larger population.
 
 <p align="center">
-$\sigma_s=\sqrt{\frac{\sum_{i} (x_i-\bar{x})}{N-1}}$
+$\sigma_s=\sqrt{\frac{\sum_{i} (x_i-\overline{x})}{N-1}}$
 </p>
 
 - Population: You have the entire population of samples that you care about, and you're _not_ trying to generalize it to a larger population.
 
 <p align="center">
-$\sigma_p=\sqrt{\frac{\sum_{i} (x_i-\bar{x})}{N}}$
+$\sigma_p=\sqrt{\frac{\sum_{i} (x_i-\overline{x})}{N}}$
 </p>
 
-- In both cases, $\bar{x}$ is the average, and $N$ is the number of samples.
+- In both cases, $\overline{x}$ is the average, and $N$ is the number of samples.
 
 #### Reporting Measurement Error/Uncertainty When You Have Random Error
 
@@ -232,4 +232,63 @@ $\sigma_p=\sqrt{\frac{(7.2-7.82)^2+(8.5-7.82)^2+(7.8-7.82)^2+(8.1-7.82)^2+(7.5-7
 $t=7.8 \pm 0.5 \text{ s}$
 </p>
 
-### Dependent Measurement Error.
+### Dependent Measurement Error
+
+#### Dependent Measurements
+- Most values can't be measured directly -- they are actually calculated from other measurements. For example, we can't measure area directly. It must be calculated by multiplying base with height.
+- This means that our error in the calculated value must be calculated from the error of our original measurements.
+
+#### Arbitraty Functions of One Variable
+Let's say you have some function $q(x)$. When you make a measurement of $x$, you'll report your measurement as:
+
+<p align="center">
+$x=x_\text{best} \pm \delta x$
+</p>
+
+where $x_\text{best}$ is your best guess (average), and $\delta x$ is your measuyrement error. How much error would we have in $q(x)$?
+
+If we plug in $x$ into the equation, we get
+
+<p align="center">
+$q_\text{best}=q(x_\text{best})$
+</p>
+
+<p align="center">
+$\delta q=q(x_\text{best}+\delta x)-q(x_\text{best})$
+</p>
+
+We can take the equation for $\delta q$ and divide both sides by $\delta x$.
+
+<p align="center">
+$\frac{\delta q}{\delta x}=\frac{q(x_\text{best}+\delta x)-q(x_\text{best})}{\delta x}$
+</p>
+
+We can assume that you used a really good measurement tool so that your error $\delta x$ is really small compared to $x$. We can take $\delta x \to 0$.
+
+<p align="center">
+$\frac{\delta q}{\delta x}=  \lim_{x \to 0}\frac{q(x_\text{best}+\delta x)-q(x_\text{best})}{\delta x}$
+</p>
+
+We can compare this to the definition of the derivative:
+
+<p align="center">
+$f'(a)=\lim_{h \to 0} \frac{f(a+h)=f(a)}{h}$
+</p>
+
+We can then say that
+
+<p align="center">
+$\frac{\delta q}{\delta x} = \frac{dq}{dx}$
+</p>
+
+Finally, we can say that the error $\delta q$ is
+
+<p align="center">
+$\delta q = \pm \frac{dq}{dx} \delta x$
+</p>
+
+For functions with multipled variables, the error is given as:
+
+<p align="center">
+$\delta q^2 = (\frac{\partial q}{\partial x}\delta x)^2 + (\frac{\partial q}{\partial y}\delta y)^2 +...(\frac{\partial q}{\partial z}\delta z)^2$
+</p>
