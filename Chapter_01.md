@@ -272,7 +272,7 @@ $\frac{\delta q}{\delta x}=  \lim_{x \to 0}\frac{q(x_\text{best}+\delta x)-q(x_\
 We can compare this to the definition of the derivative:
 
 <p align="center">
-$f'(a)=\lim_{h \to 0} \frac{f(a+h)=f(a)}{h}$
+$f'(a)=\lim_{h \to 0} \frac{f(a+h)-f(a)}{h}$
 </p>
 
 We can then say that
